@@ -4,16 +4,15 @@ def maybeBuildTrap(x, y):
     hero.moveXY(x, y)
     enemy = hero.findNearestEnemy()
     if enemy:
-        pass
-        hero.buildXY("fire-trap",x,y)
         # Use buildXY to build a "fire-trap" at the given x and y.
-        
+        hero.buildXY("fire-trap",x,y)
+        pass
+
 while True:
-    # This calls maybeBuildTrap, with the coordinates of the bottom entrance.
-    maybeBuildTrap(38, 20)
-    
+    # This calls maybeBuildTrap, with the coordinates of the left entrance.
+    maybeBuildTrap(20, 34)
+    # Now use maybeBuildTrap at the bottom entrance!
+    maybeBuildTrap(38, 19)
     # Now use maybeBuildTrap at the right entrance!
     maybeBuildTrap(56, 34)
-    # Now use maybeBuildTrap at the top entrance!
-    maybeBuildTrap(38, 48)
     
